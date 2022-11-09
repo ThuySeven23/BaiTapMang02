@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết Chương trình tìm xem V có nằm trong mảng số nguyên hay không?</title>
+</head>
+<script>
+
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("Nhap mang thu [" + i + "]");
+    }
+
+    let v = +prompt("Nhap so V : ");
+    let joke = 0;
+
+    for (let j = 0; j < 10 ; j++) {
+        if (v === arr[j])
+        {
+            document.write("V is in the array");
+            break;
+        }
+        else
+        {
+            joke++;
+        }
+        if (joke > 10 )
+        {
+            document.write("V is not in the array");
+            break;
+        }
+    }
+
+</script>
+</html>

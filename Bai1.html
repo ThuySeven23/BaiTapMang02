@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nối tất cả các phần tử trong một mảng </title>
+    <title>Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.</title>
 </head>
 <body>
 
 </body>
 <script>
-    let myColor =  ["Red", "Green", "White", "Black"];
-    document.write(myColor.toString());
+    let arr = [];
+    for (let i = 0; i < 10 ; i++) {
+        arr[i] = +prompt("Nhap so vao: ");
+    }
+    for (let j = 0; j < 10; j++) {
+        if (arr[j] >= 10)
+        {
+            document.write(arr[j] + " ");
+        }
+    }
 </script>
 </html>

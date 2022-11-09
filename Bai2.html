@@ -2,31 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chèn dấu giữa 2 số chẵn </title>
+    <title> Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.</title>
 </head>
 <body>
 
 </body>
-</html>
 <script>
-    const number = prompt("Nhập số vào: ");
-    const str = number.toString();
-    const result = [str[0]];
-
-    for (let i = 1; i < str.length ; i++) {
-        if (str[i-1] % 2 === 0 && str[i] % 2 === 0)
-        {
-            result.push("-" , str[i]);
-        }
-        else
-        {
-            result.push(str[i]);
-        }
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("Nhap so vao");
+    }
+    var max = arr[0];
+    var index = 0;
+    for (let j = 0; j < 10 ; j++) {
+       if (arr[j] > max)
+       {
+           max = arr[j];
+           index = j;
+       }
     }
 
-    document.write(result.join(""));
-
-
-
+    document.write("So lon nhat: " + max + " , co vi tri trong mang : " + index);
 
 </script>
+</html>
