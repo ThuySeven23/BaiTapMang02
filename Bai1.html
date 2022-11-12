@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.</title>
+    <title>Viết chương trình khởi tạo mảng 2 chiều</title>
 </head>
 <body>
 
 </body>
 <script>
-    let arr = [];
-    for (let i = 0; i < 10 ; i++) {
-        arr[i] = +prompt("Nhap so vao: ");
-    }
-    for (let j = 0; j < 10; j++) {
-        if (arr[j] >= 10)
-        {
-            document.write(arr[j] + " ");
+    let a = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    var elementEmpty = "";
+    for (let i = 0; i < a.length; i++) {
+        elementEmpty += "Row " + i + ":<br>" ;
+        for (let j = 0; j < a[i].length; j++){
+            elementEmpty += a[i][j] + "<br>";
         }
     }
+    document.write(elementEmpty);
+
 </script>
 </html>

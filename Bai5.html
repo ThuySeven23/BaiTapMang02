@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Viết chương trình đếm số nguyên âm trong một chuỗi</title>
+    <title>Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.</title>
 </head>
 <body>
 
 </body>
 <script>
-    let arr = [];
-    let number = +prompt("Nhap so luong mang: ");
-    let count = 0;
+    let str1 = prompt("Nhập chuỗi đầu tiên");
+    let str2 = prompt("Nhập chuỗi thứ hai");
 
+    if (str1 === str2)
+    {
+        document.write("Hai chuỗi giống nhau");
 
-    for (let i = 0; i < number  ; i++) {
-        arr[i] = +prompt("Nhap phan tu thu " + (i+1));
-        if (arr[i] < 0 )
-        {
-            count++;
-        }
     }
-    document.write("Chuong trinh co : " + count + " so nguyen am .");
+    else
+    {
+        document.write("Hai chuỗi khác nhau");
+    }
 </script>
 </html>

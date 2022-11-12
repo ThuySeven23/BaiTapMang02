@@ -2,27 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.</title>
+    <title> Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược.</title>
 </head>
 <body>
 
 </body>
 <script>
-    let arr = [];
-    for (let i = 0; i < 10; i++) {
-        arr[i] = +prompt("Nhap so vao");
+    let array = new Array(5);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt("Nhập từng kí tự: ");
     }
-    var max = arr[0];
-    var index = 0;
-    for (let j = 0; j < 10 ; j++) {
-       if (arr[j] > max)
-       {
-           max = arr[j];
-           index = j;
-       }
-    }
-
-    document.write("So lon nhat: " + max + " , co vi tri trong mang : " + index);
-
+    document.write("Mảng vừa nhập là: " +  array + "<br>" );
+    document.write("Mảng sau khi đảo ngược là: "+ array.reverse() );
 </script>
 </html>
