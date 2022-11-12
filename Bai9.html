@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.</title>
+</head>
+<body>
+
+</body>
+<script>
+    var a = new Array(10);
+    var b = new Array(10);
+    var c = new Array(20);
+
+    for (let i = 0; i < a.length ; i++) {
+        a[i] = prompt("Nhap phan tu thu " + i + " cua mang a.");
+    }
+    for (let i = 0; i < b.length ; i++) {
+        b[i] = prompt("Nhap phan tu thu " + i + "  cua mang b.");
+    }
+
+    c = a.concat(b);
+    document.writeln("Mang a: " + a);
+    document.writeln("<br>");
+    document.writeln("Mang b: " + b);
+    document.writeln('<br>');
+    document.writeln("Mang c: " + c);
+</script>
+</html>
